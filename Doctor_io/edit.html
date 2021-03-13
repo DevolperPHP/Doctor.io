@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Edit - تحرير</title>
+
+		<!--CSS SOURCES-->
+		<link rel="stylesheet" type="text/css" href="css/resources/CustomButtons.css">
+		<link rel="stylesheet" type="text/css" href="css/resources/Navbar.css">
+
+		<link rel="stylesheet" type="text/css" href="css/edit.css">
+
+		<!--Properties-->
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+		<!--Navbar Start-->
+		<nav class="navbar">
+			<label class="brand">Doctor</label>
+
+			<div class="items">
+				<a href="index.html" class="item">Home</a>
+				<a href="saved.html" class="item">Saved</a>
+				<a href="edit.html" class="item">Edit</a>
+			</div>
+		</nav>
+		<!--Navbar END-->
+
+		<!--Buttons Start-->
+		<div class="buttons">
+			<button class="btn filled" onclick="openPage(0);">Add Item</button>
+			<button class="btn filled" onclick="openPage(1);">Remove Item</button>
+			<button class="btn filled" onclick="openPage(2);">Add List</button>
+			<button class="btn filled" onclick="openPage(3);">Remove List</button>
+		</div>
+
+		<div class="buttons2">
+			<button class="btn filled" onclick="back();">Back</button>
+		</div>
+		<!--Buttons END-->
+
+		<!--Pages Start-->
+		<div id="pages">
+			<!--Page Start-->
+			<div class="page">
+				<select id="itemListSelect">
+					<option selected>Select a List...</option>
+				</select>
+
+				<input type="text" id="itemNameInput">
+
+				<button class="btn underline" onclick="addItem();">ADD item</button>
+			</div>
+
+			<!--Page Start-->
+			<div class="page">
+				<select id="itemListSelect3" onchange="showItems(this);">
+					<option selected>Select a List...</option>
+				</select>
+
+				<select id="itemSelect">
+					<option selected>Select an Item...</option>
+				</select>
+
+				<button class="btn underline" onclick="deleteItem();">Delete</button>
+			</div>
+
+			<!--Page Start-->
+			<div class="page">
+				<input type="text" id="listNameInput">
+				<button class="btn underline" onclick="addList();">ADD list</button>
+			</div>
+
+			<!--Page Start-->
+			<div class="page">
+				<select id="itemListSelect2">
+					<option selected>Select a List...</option>
+				</select>
+
+				<button class="btn underline" onclick="deleteList();">Delete</button>
+			</div>
+		</div>
+		<!--Pages END-->
+
+
+
+
+
+
+		<!--JS SOURCES-->
+		<script src="js/settle.js"></script>
+		<script src="js/edit.js"></script>
+	</body>
+</html>

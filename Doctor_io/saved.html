@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Home - المحفوظات</title>
+
+		<!--CSS SOURCES-->
+		<link rel="stylesheet" type="text/css" href="css/resources/CustomButtons.css">
+		<link rel="stylesheet" type="text/css" href="css/resources/Navbar.css">
+		<link rel="stylesheet" type="text/css" href="css/resources/preview.css">
+
+		<link rel="stylesheet" type="text/css" href="css/saved.css">
+
+		<!--Properties-->
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+		<!--Navbar Start-->
+		<nav class="navbar">
+			<label class="brand">Doctor</label>
+
+			<div class="items">
+				<a href="index.html" class="item">Home</a>
+				<a href="saved.html" class="item">Saved</a>
+				<a href="edit.html" class="item">Edit</a>
+			</div>
+		</nav>
+		<!--Navbar END-->
+
+		<!--Content Start-->
+		<div class="content">
+			<div class="preview">
+				<div class="page">
+					<div class="list" id="list">
+					</div>
+				</div>
+
+				<button class="btn underline middle" onclick="printItAfter();">Print</button>
+
+				<select id="itemListSelect" onchange="showItems(this);">
+				</select>
+
+				<select id="itemSelect">
+				</select>
+
+				<button class="btn underline middle" onclick="addItem();">ADD</button>
+			</div>
+
+			<form class="form" id="ListForm">
+			</form>
+		</div>
+		<!--Content END-->
+
+
+
+
+		<!--JS SOURCES-->
+		<script src="js/settle.js"></script>
+		<script src="js/saved.js"></script>
+	</body>
+</html>
